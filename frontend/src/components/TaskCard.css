@@ -1,0 +1,19 @@
+.task-card { padding:1.25rem; display:flex; flex-direction:column; gap:.8rem; border-left:3px solid transparent; position:relative; overflow:hidden; }
+.task-card::before { content:''; position:absolute; inset:0; opacity:0; transition:opacity .2s; pointer-events:none; }
+.task-card:hover { transform:translateY(-3px); box-shadow:var(--shadow); }
+.priority-high   { border-left-color:var(--danger); }
+.priority-high::before { background:linear-gradient(135deg,rgba(248,81,73,.04),transparent); }
+.priority-medium { border-left-color:var(--warning); }
+.priority-medium::before { background:linear-gradient(135deg,rgba(210,153,34,.04),transparent); }
+.priority-low    { border-left-color:var(--success); }
+.priority-low::before { background:linear-gradient(135deg,rgba(63,185,80,.04),transparent); }
+.task-card:hover::before { opacity:1; }
+.completed-card { opacity:.7; }
+.tc-top { display:flex; justify-content:space-between; align-items:flex-start; flex-wrap:wrap; gap:.35rem; }
+.tc-badges { display:flex; flex-wrap:wrap; gap:.3rem; }
+.tc-title { font-size:.975rem; font-weight:700; line-height:1.35; color:var(--text); }
+.tc-title.done { text-decoration:line-through; color:var(--text3); }
+.tc-desc { font-size:.82rem; color:var(--text2); line-height:1.55; display:-webkit-box; -webkit-line-clamp:2; -webkit-box-orient:vertical; overflow:hidden; }
+.tc-due { font-size:.75rem; color:var(--text2); font-family:var(--mono); }
+.tc-due.overdue { color:var(--danger); font-weight:600; }
+.tc-actions { display:flex; gap:.4rem; flex-wrap:wrap; margin-top:auto; padding-top:.25rem; }

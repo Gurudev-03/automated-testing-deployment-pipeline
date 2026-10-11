@@ -1,0 +1,1 @@
+{"root":["./src/app.tsx","./src/api.ts","./src/main.tsx","./src/types.ts","./src/components/filters.tsx","./src/components/header.tsx","./src/components/statsbar.tsx","./src/components/taskcard.tsx","./src/components/taskform.tsx","./src/components/toast.tsx"],"version":"5.9.3"}

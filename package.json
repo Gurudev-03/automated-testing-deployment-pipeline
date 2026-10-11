@@ -1,0 +1,16 @@
+{
+  "name": "automated-testing-deployment-pipeline",
+  "version": "1.0.0",
+  "description": "Task Manager — Automated Testing & Deployment Pipeline (College Group Project)",
+  "scripts": {
+    "test":         "npm run test:backend && npm run test:frontend",
+    "test:backend": "cd backend && npm test",
+    "test:frontend":"cd frontend && npm test",
+    "build":        "cd frontend && npm run build",
+    "dev:backend":  "cd backend && npm run dev",
+    "dev:frontend": "cd frontend && npm run dev"
+  },
+  "keywords": ["ci-cd", "testing", "deployment", "react", "nodejs", "docker"],
+  "author": "Kaviyarasan A, Kesavaram K, Kishorekumar S, Gurudev S, Logeswaran C",
+  "license": "MIT"
+}

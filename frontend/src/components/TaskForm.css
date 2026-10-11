@@ -1,0 +1,7 @@
+.task-form { padding:1.75rem; }
+.form-header { display:flex; justify-content:space-between; align-items:center; margin-bottom:1.5rem; }
+.form-title { font-size:1.1rem; font-weight:700; color:var(--accent); }
+.form-body { display:grid; grid-template-columns:1fr 1fr; gap:1rem; margin-bottom:1.5rem; }
+.span-full { grid-column:1/-1; }
+.form-footer { display:flex; gap:.75rem; }
+@media(max-width:500px) { .form-body { grid-template-columns:1fr; } }
